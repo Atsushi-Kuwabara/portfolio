@@ -1,0 +1,19 @@
+= render 'modules/header'
+.about
+  .about__title
+    About
+  .about__profile
+    = image_tag 'profile.jpeg', alt: 'ProfileImage', height: '30%', width: '30%', class: 'about__profile__image'
+    .about__profile__detail
+      .mini-title
+        経歴
+      .mini-content
+        %div 2018.04  某展示会運営会社へ新卒入社、プロモーション業務に従事
+        %div 2019.01  プログラミングスクール「TECH::EXPERT(現/TECH CAMP)」入会
+        %div 2019.12  エンジニア転職のため、退職
+        %div 2020.06  某ITコンサル会社に転職、フルスタックエンジニアへ
+      .mini-title
+        使用言語・フレームワーク等
+      .mini-content
+        HTML / CSS / JavaScript / Ruby / Ruby On Rails / Python / Django / AWS / PostgreSQL / MySQL
+= render 'modules/footer'

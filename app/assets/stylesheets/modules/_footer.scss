@@ -5,13 +5,15 @@
   background-color: $background;
   box-sizing: border-box;
   display: flex;
-  line-height: 5vh;
-  padding: 1vh 2vw;
+  padding: 1vh 10vw;
   border-top: 1px solid $accent;
   a {
     @include link-default
   }
-  .works {
+  &__works {
     margin: 0 2vw;
+  }
+  &__blog {
+    margin-right: 2vw;
   }
 }

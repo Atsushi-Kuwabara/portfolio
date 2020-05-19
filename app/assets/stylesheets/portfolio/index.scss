@@ -1,3 +1,51 @@
 .contents {
-  padding-top: 10vh;
+  padding: 10vh 10vw 0 10vw;
+  color: $font;
+  overflow: scroll;
+  .about {
+    &__title {
+      @include contents-title
+    }
+    &__profile {
+      display: flex;
+      &__image {
+        border-radius: 50px;
+      }
+      &__detail {
+        margin: 0 2vw;
+        .mini-title {
+          @include mini-title
+        }
+        .mini-content {
+          @include mini-content
+        }
+      }
+    }
+  }
+  .works {
+    &__title {
+      @include contents-title
+    }
+    &__contents {
+      display: flex;
+      .work {
+        height: 25vh;
+        width: 25vw;
+        &__image {
+          object-fit: cover;
+          object-position: left top;
+          height: 100%;
+          width: 100%;
+        }
+        &__name {
+          text-align: center;
+        }
+      }
+    }
+  }
+  .blog {
+    &__title {
+      @include contents-title
+    }
+  }
 }

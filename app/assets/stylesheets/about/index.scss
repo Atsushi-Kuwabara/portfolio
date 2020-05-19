@@ -1,0 +1,22 @@
+.about {
+  padding: 10vh 10vw 0 10vw;
+  color: $font;
+  &__title {
+    @include contents-title
+  }
+  &__profile {
+    display: flex;
+    &__image {
+      border-radius: 50px;
+    }
+    &__detail {
+      margin: 0 2vw;
+      .mini-title {
+        @include mini-title
+      }
+      .mini-content {
+        @include mini-content
+      }
+    }
+  }
+}

@@ -7,7 +7,7 @@
   display: flex;
   line-height: 10vh;
   justify-content: space-between;
-  padding: 1vh 2vw;
+  padding: 1vh 10vw;
   border-bottom: 1px solid $accent;
   position: fixed;
   a {
@@ -26,6 +26,9 @@
       margin-right:4vw;
       &__works {
         margin: 0 2vw;
+      }
+      &__blog {
+        margin-right: 2vw;
       }
     }
     &__sns {

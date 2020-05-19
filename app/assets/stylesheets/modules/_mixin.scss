@@ -8,3 +8,22 @@
   font-family: "Font Awesome 5 Brands";
   font-weight: 400;
 }
+
+@mixin contents-title {
+  text-align: center;
+  font-family: "Eustache";
+  font-size: 7vh;
+  margin: 5vh 0 3vh 0;
+}
+
+@mixin mini-title {
+  font-size: 3.5vh;
+  font-weight: bold;
+  font-family: 'Hiragino Maru Gothic Pro';
+}
+
+@mixin mini-content {
+  font-size: 2vh;
+  font-family: 'Hiragino Maru Gothic Pro';
+  padding: 0 0 1vh 1vw;
+}
