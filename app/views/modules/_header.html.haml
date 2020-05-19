@@ -1,10 +1,10 @@
 .header
   .title
-    AtsushiKuwabara
+    = link_to 'AtsushiKuwabara', root_path
   .nav-list
     .nav-list__link
-      = link_to "About", "/abouts/", class: "nav-list__link__about"
-      = link_to "Works", "#", class: "nav-list__link__works"
+      = link_to "About", "/abouts", class: "nav-list__link__about"
+      = link_to "Works", "/works", class: "nav-list__link__works"
       = link_to "Blog", "#", class: "nav-list__link__blog"
       = link_to "Contact", "#", class: "nav-list__link__contact"
     .nav-list__sns

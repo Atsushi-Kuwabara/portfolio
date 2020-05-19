@@ -1,0 +1,26 @@
+.works {
+  padding: 10vh 10vw 0 10vw;
+  height: 85vh;
+  overflow: scroll;
+  &__title {
+    @include contents-title
+  }
+  &__contents {
+    .work {
+      height: 100%;
+      width: 100%;
+      &__image {
+        object-fit: cover;
+        object-position: left top;
+        height: 100%;
+        width: 100%;
+      }
+      &__name {
+        @include mini-title
+      }
+      &__detail {
+        @include mini-content
+      }
+    }
+  }
+}
