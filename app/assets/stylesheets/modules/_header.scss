@@ -1,0 +1,18 @@
+.header {
+  height: 10vh;
+  width: 100vw;
+  color: $font;
+  background-color: $background;
+  display: flex;
+  line-height: 10vh;
+  &__title {
+  }
+
+  &__nav-list {
+    display: flex;
+  }
+
+  &__sns {
+
+  }
+}
