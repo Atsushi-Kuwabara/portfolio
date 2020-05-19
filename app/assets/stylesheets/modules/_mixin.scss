@@ -1,0 +1,10 @@
+@mixin link-default {
+  text-decoration: none;
+  color: $font;
+}
+
+@mixin fontawesome-brands {
+  color: $accent;
+  font-family: "Font Awesome 5 Brands";
+  font-weight: 400;
+}

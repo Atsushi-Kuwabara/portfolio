@@ -1,12 +1,12 @@
 .header
-  .header__title
+  .title
     AtsushiKuwabara
-  .header__nav-list
-    .header__nav-list__about
-      About
-    .header__nav-list__works
-      Works
-    .header__nav-list__qiita
-      Qiita
-  .header__sns
-    = icon('fab', 'instagram', class: "icon")
+  .nav-list
+    .nav-list__link
+      = link_to "About", "#", class: "nav-list__link__about"
+      = link_to "Works", "#", class: "nav-list__link__works"
+      = link_to "Contact", "#", class: "nav-list__link__contact"
+    .nav-list__sns
+      = link_to "", "https://github.com/Atsushi-Kuwabara", class: "nav-list__sns__github"
+      = link_to "", "https://www.instagram.com/kuwa__/", class: "nav-list__sns__insta"
+      = link_to "", "https://www.facebook.com/atsushi.kuwabara.39", class: "nav-list__sns__facebook"

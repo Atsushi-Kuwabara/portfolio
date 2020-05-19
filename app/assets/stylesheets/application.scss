@@ -2,5 +2,7 @@
 @import 'font-awesome-sprockets';
 @import 'font-awesome';
 @import "config/color";
-@import "portfolio/index.scss";
+@import "font.scss";
+@import "modules/mixin";
 @import "modules/header";
+@import "portfolio/index.scss";
