@@ -1,8 +1,9 @@
 @import "config/reset.scss";
-@import 'font-awesome-sprockets';
-@import 'font-awesome';
+@import "font-awesome-sprockets";
+@import "font-awesome";
 @import "config/color";
 @import "font.scss";
 @import "modules/mixin";
 @import "modules/header";
-@import "portfolio/index.scss";
+@import "modules/footer";
+@import "portfolio/index";

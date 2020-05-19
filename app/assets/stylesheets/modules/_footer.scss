@@ -1,0 +1,17 @@
+.footer {
+  height: 5vh;
+  width: 100vw;
+  color: $font;
+  background-color: $background;
+  box-sizing: border-box;
+  display: flex;
+  line-height: 5vh;
+  padding: 1vh 2vw;
+  border-top: 1px solid $accent;
+  a {
+    @include link-default
+  }
+  .works {
+    margin: 0 2vw;
+  }
+}
