@@ -1,7 +1,5 @@
 .works {
-  padding: 10vh 10vw 0 10vw;
-  height: 85vh;
-  overflow: scroll;
+  @include middle-content ;
   &__title {
     @include contents-title
   }

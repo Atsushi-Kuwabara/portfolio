@@ -1,0 +1,39 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.blog-list {
+  @include middle-content;
+  .title {
+    @include contents-title;
+  }
+  .blog {
+    font-family: 'Hiragino Maru Gothic Pro';
+    .blog-upper {
+      height: 6vh;
+      display: flex;
+      justify-content: space-between;
+      padding: 3vh 0;
+      line-height: 6vh;
+      .upper-title {
+        font-size: 4vh;
+        font-weight: bold;
+      }
+    }
+    .blog-image img {
+      max-width: 70vw;
+      min-width: 70vw;
+    }
+    .blog-image {
+      text-align: center;
+    }
+    .blog-content {
+      padding-bottom: 2vh;
+      margin-bottom: 5vh;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  .paginate {
+    margin-bottom: 3vh;
+  }
+}

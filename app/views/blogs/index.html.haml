@@ -1,0 +1,18 @@
+=render "modules/header"
+.blog-list
+  .title
+    Blog
+  - @blogs.each do |blog|
+    .blog
+      .blog-upper
+        .upper-title
+          = link_to "#{blog.name}", blog_path(blog.id)
+        .upper-date
+          = blog.created_at.strftime("%Y.%m.%d")
+      .blog-image
+        = image_tag "#{blog.image}"
+      .blog-content
+        = safe_join(blog.content.split("\n"),tag(:br))
+  .paginate
+    = paginate @blogs
+=render "modules/footer"
