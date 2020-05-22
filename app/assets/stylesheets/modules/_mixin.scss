@@ -33,3 +33,13 @@
   height: 85vh;
   overflow: scroll;
 }
+
+@mixin image-size {
+  max-width: 70vw;
+  min-width: 70vw;
+}
+
+@mixin image-position {
+  text-align: center;
+  margin: 0 0 3vh 0;
+}

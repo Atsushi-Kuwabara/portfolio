@@ -3,16 +3,10 @@
   .title
     Blog
   - @blogs.each do |blog|
-    .blog
-      .blog-upper
-        .upper-title
-          = link_to "#{blog.name}", blog_path(blog.id)
-        .upper-date
-          = blog.created_at.strftime("%Y.%m.%d")
-      .blog-image
-        = image_tag "#{blog.image}"
-      .blog-content
-        = safe_join(blog.content.split("\n"),tag(:br))
+    = render partial:"modules/title-image", locals: {id: blog.id, name: blog.name, image: blog.image, created_at: blog.created_at }
+    .blog-content
+      = safe_join(blog.content[0,5].split("\n"),tag(:br))
+      = link_to "MORE...", blog_path(blog.id), class:"more-button"
   .paginate
     = paginate @blogs
-=render "modules/footer"
+= render "modules/footer"

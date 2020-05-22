@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.blog-list {
+  @include middle-content;
+  .title {
+    @include contents-title;
+  }
+  .blog-content {
+    padding-bottom: 2vh;
+    margin-bottom: 5vh;
+    border-bottom: 1px solid $accent;
+  }
+  .back {
+    margin-bottom: 3vh;
+  }
+}

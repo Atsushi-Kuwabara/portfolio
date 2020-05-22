@@ -2,18 +2,25 @@
   height: 5vh;
   width: 100vw;
   color: $font;
-  background-color: $background;
+  border-top: 1px solid $accent;
   box-sizing: border-box;
   display: flex;
   padding: 1vh 15vw;
-  border-top: 1px solid $accent;
+  justify-content: space-between;
   a {
     @include link-default
   }
-  &__works {
-    margin: 0 2vw;
+  &__left {
+    &__works {
+      margin: 0 2vw;
+    }
+    &__blog {
+      margin-right: 2vw;
+    }
   }
-  &__blog {
-    margin-right: 2vw;
+  &__right {
+    &__insta {
+      margin: 0 2vw;
+    }
   }
 }

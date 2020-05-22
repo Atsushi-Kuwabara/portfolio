@@ -1,0 +1,10 @@
+=render "modules/header"
+.blog-list
+  .title
+    Blog
+  = render partial:"modules/title-image", locals: {id: @blog.id, name: @blog.name, image: @blog.image, created_at: @blog.created_at }
+  .blog-content
+    = safe_join(@blog.content.split("\n"),tag(:br))
+  .back
+    =link_to "一覧に戻る", blogs_path
+= render "modules/footer"

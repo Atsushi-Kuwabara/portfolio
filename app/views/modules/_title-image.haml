@@ -1,0 +1,8 @@
+.blog
+  .blog-upper
+    .upper-title
+      = link_to "#{name}", blog_path(id)
+    .upper-date
+      = created_at.strftime("%Y.%m.%d")
+  .blog-image
+    = image_tag "#{image}"

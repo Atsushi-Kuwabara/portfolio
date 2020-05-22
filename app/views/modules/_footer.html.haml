@@ -1,5 +1,10 @@
 .footer
-  = link_to "About", "#", class: "footer__about"
-  = link_to "Works", "#", class: "footer__works"
-  = link_to "blog", "#", class: "footer__blog"
-  = link_to "Contact", "#", class: "footer__contact"
+  .footer__left
+    = link_to "About", abouts_path, class: "footer__left__about"
+    = link_to "Works", works_path, class: "footer__left__works"
+    = link_to "blog", blogs_path, class: "footer__left__blog"
+    = link_to "Contact(改装中)", "#", class: "footer__left__contact"
+  .footer__right
+    = link_to "GitHub", "https://github.com/Atsushi-Kuwabara", class: "footer__right__github"
+    = link_to "Instagram", "https://www.instagram.com/kuwa__/", class: "footer__right__insta"
+    = link_to "Facebook", "https://www.facebook.com/atsushi.kuwabara.39", class: "footer__right__facebook"
